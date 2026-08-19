@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martyna | Soil, Fermentation & Heart-Centred Living</title>
+<meta name="description" content="Work with Martyna on soil & foodscaping, fermentation & the natural homestead, and honest heart-centred conversation. Consultancy for gardeners, growers and anyone ready to live a little closer to the earth.">
+
+<!-- ============================================================
+  HOW TO MAKE THIS YOURS — read me first
+  1. HERO / ABOUT PHOTOS: search this file for "PLACEHOLDER-IMAGE"
+     comments. Each one names the exact filename it's looking for
+     (e.g. images/hero-martyna.jpg). Create an "images" folder next
+     to this file and drop photos in with those exact names — they
+     appear automatically. Until then, a soft placeholder card shows.
+  2. GALLERY PHOTOS (multiple per category): search for
+     "GALLERY DATA" near the bottom of this file. Each category has
+     a list of image filenames — add as many lines as you like (you
+     said you've got tonnes of good ones!), or remove the ones you
+     don't need. No other part of the file needs to change; the
+     gallery tiles, photo counts and the click-through lightbox all
+     build themselves from that one list. This stays 100% static —
+     it still works on any free host (Netlify, GitHub Pages, etc.),
+     nothing here needs a server.
+  3. SUBSTACK LINK: search for "YOUR-SUBSTACK-URL" and replace with
+     your real Substack address (appears twice).
+  4. ENQUIRY FORM: search for "YOUR-FORMSPREE-ID". Create a free
+     account at formspree.io, make a new form, and paste the ID it
+     gives you (looks like "mzzendpoint" or similar) in place of
+     that placeholder. Submissions will then land straight in your
+     inbox — no extra setup needed.
+  5. DOMAIN / EMAIL: search for "YOURDOMAIN.COM" and "hello@YOURDOMAIN.COM"
+     in the footer and swap in your real domain and contact email.
+  6. SOCIAL LINKS: search for "YOUR-INSTAGRAM-URL" if you'd like to
+     link Instagram in the footer (optional — remove the line if not).
+============================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23E3A83B'/%3E%3Cpath d='M50 20c-14 10-22 22-22 34a22 22 0 0 0 44 0c0-12-8-24-22-34z' fill='%233B5D3A'/%3E%3C/svg%3E">
+
+<style>
+  :root{
+    --bg: #FBF3E7;
+    --bg-alt: #F5EBD8;
+    --card: #FFFDF8;
+    --green-deep: #33502F;
+    --green-mid: #5C7F4F;
+    --green-pale: #E3EBD9;
+    --yellow: #DFA23A;
+    --yellow-soft: #F1CE8B;
+    --pink: #DD8C82;
+    --pink-pale: #F6DAD3;
+    --text: #2A2820;
+    --text-soft: #5B5646;
+    --line: rgba(51,80,47,0.14);
+    --shadow: 0 10px 30px rgba(51,80,47,0.10);
+    --radius: 22px;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Jost', sans-serif;
+    font-weight:400;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', serif;
+    color:var(--green-deep);
+    line-height:1.15;
+    margin:0 0 .5em 0;
+    font-weight:600;
+  }
+  p{ margin:0 0 1em 0; }
+  a{ color:var(--green-mid); }
+  img{ max-width:100%; display:block; }
+  .wrap{ max-width:1120px; margin:0 auto; padding:0 28px; }
+  section{ padding:96px 0; position:relative; }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:'Jost',sans-serif; font-size:13px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--green-mid); font-weight:600;
+    margin-bottom:14px;
+  }
+  .eyebrow::before{
+    content:''; width:26px; height:1px; background:var(--yellow);
+    display:inline-block;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 28px; border-radius:100px; text-decoration:none;
+    font-family:'Jost',sans-serif; font-weight:500; font-size:15.5px;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    border:1.5px solid transparent; cursor:pointer;
+  }
+  .btn-primary{ background:var(--green-deep); color:#fff; }
+  .btn-primary:hover{ background:var(--green-mid); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn-outline{ border-color:var(--green-deep); color:var(--green-deep); background:transparent; }
+  .btn-outline:hover{ background:var(--green-deep); color:#fff; transform:translateY(-2px); }
+  .btn-sun{ background:var(--yellow); color:#3a2c0d; }
+  .btn-sun:hover{ background:var(--yellow-soft); transform:translateY(-2px); box-shadow:var(--shadow); }
+
+  /* reveal-on-scroll */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,243,231,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:16px; padding-bottom:16px;
+  }
+  .logo{
+    font-family:'Fraunces',serif; font-weight:600; font-size:22px;
+    color:var(--green-deep); text-decoration:none; letter-spacing:.01em;
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo .dot{ color:var(--yellow); }
+  .nav-links{ display:flex; align-items:center; gap:34px; list-style:none; margin:0; padding:0; }
+  .nav-links a{
+    text-decoration:none; color:var(--text); font-size:15.5px; font-weight:500;
+    position:relative; padding:4px 0;
+  }
+  .nav-links a::after{
+    content:''; position:absolute; left:0; bottom:-2px; width:0; height:2px;
+    background:var(--yellow); transition:width .25s ease;
+  }
+  .nav-links a:hover::after{ width:100%; }
+  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; padding:6px; }
+  .nav-toggle span{ display:block; width:24px; height:2px; background:var(--green-deep); margin:5px 0; transition:.25s; }
+
+  @media (max-width:860px){
+    .nav-links{
+      position:absolute; top:100%; left:0; right:0; background:var(--bg);
+      flex-direction:column; align-items:flex-start; gap:0;
+      max-height:0; overflow:hidden; border-bottom:1px solid var(--line);
+      transition:max-height .35s ease;
+    }
+    .nav-links.open{ max-height:340px; }
+    .nav-links li{ width:100%; }
+    .nav-links a{ display:block; padding:16px 28px; width:100%; }
+    .nav-links a::after{ display:none; }
+    .nav-toggle{ display:block; }
+  }
+
+  /* ---------- HERO ---------- */
+  #home{
+    padding-top:70px;
+    background:
+      radial-gradient(ellipse 60% 50% at 85% 0%, rgba(223,162,58,0.20), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 8% 15%, rgba(92,127,79,0.18), transparent 60%),
+      radial-gradient(ellipse 40% 40% at 60% 90%, rgba(221,140,130,0.14), transparent 60%),
+      var(--bg);
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center;
+  }
+  .hero-grid > *{ min-width:0; min-height:0; }
+  .hero-tag{
+    font-family:'Fraunces',serif; font-style:italic; font-weight:500;
+    color:var(--green-mid); font-size:19px; margin-bottom:18px;
+  }
+  h1.headline{ font-size:clamp(34px,4.6vw,54px); }
+  .headline .accent{ color:var(--yellow); }
+  .lede{ font-size:18px; color:var(--text-soft); max-width:52ch; }
+  .hero-ctas{ display:flex; flex-wrap:wrap; gap:14px; margin-top:30px; }
+
+  .photo-card{
+    position:relative; border-radius:var(--radius); overflow:hidden;
+    box-shadow:var(--shadow); aspect-ratio:4/5;
+  }
+  .placeholder-photo{
+    width:100%; height:100%; display:flex; flex-direction:column; align-items:center;
+    justify-content:center; gap:10px; text-align:center; padding:24px;
+    background:linear-gradient(155deg, var(--green-pale) 0%, var(--yellow-soft) 55%, var(--pink-pale) 100%);
+    color:var(--green-deep);
+  }
+  .placeholder-photo svg{ width:42px; height:42px; opacity:.6; }
+  .placeholder-photo .label{ font-family:'Jost',sans-serif; font-weight:500; font-size:14px; }
+  .placeholder-photo .sub{ font-size:12.5px; color:var(--text-soft); }
+  .photo-card img{ width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+
+  .hero-badge{
+    position:absolute; bottom:-22px; left:-22px; background:var(--card);
+    border-radius:18px; padding:16px 20px; box-shadow:var(--shadow);
+    display:flex; align-items:center; gap:12px; max-width:230px;
+  }
+  .hero-badge .ico{
+    width:38px; height:38px; border-radius:50%; background:var(--green-pale);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .hero-badge .txt{ font-size:13px; color:var(--text-soft); line-height:1.4; }
+  .hero-badge strong{ display:block; color:var(--green-deep); font-family:'Fraunces',serif; font-size:14.5px; }
+  @media (max-width:860px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-badge{ display:none; }
+  }
+
+  /* ---------- INTRO / ABOUT ---------- */
+  #about{ background:var(--bg-alt); }
+  .about-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:center; }
+  .about-grid > *{ min-width:0; min-height:0; }
+  .about-photo{ border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); aspect-ratio:1/1; }
+  .about-copy p{ color:var(--text-soft); font-size:16.5px; }
+  .about-copy p:first-of-type{ color:var(--text); font-size:18px; }
+  .signoff{ font-family:'Fraunces',serif; font-style:italic; color:var(--green-deep); font-size:19px; margin-top:8px; }
+  @media (max-width:860px){ .about-grid{ grid-template-columns:1fr; } }
+
+  .substack-strip{
+    margin-top:36px; padding:22px 26px; border-radius:18px; background:var(--card);
+    border:1px solid var(--line); display:flex; align-items:center; justify-content:space-between;
+    gap:20px; flex-wrap:wrap;
+  }
+  .substack-strip .txt strong{ display:block; font-family:'Fraunces',serif; color:var(--green-deep); font-size:17px; }
+  .substack-strip .txt span{ color:var(--text-soft); font-size:14.5px; }
+  .press-note{ margin:16px 0 0; font-size:14.5px; color:var(--text-soft); }
+
+  /* ---------- CONSULTANCY ---------- */
+  #consultancy .section-head{ max-width:64ch; }
+  .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:52px; }
+  .card{
+    background:var(--card); border-radius:var(--radius); padding:34px 30px;
+    box-shadow:var(--shadow); border-top:4px solid var(--green-mid);
+    display:flex; flex-direction:column; transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .card:hover{ transform:translateY(-6px); }
+  .card:nth-child(2){ border-top-color:var(--yellow); }
+  .card:nth-child(3){ border-top-color:var(--pink); }
+  .card .ico{
+    width:52px; height:52px; border-radius:16px; display:flex; align-items:center; justify-content:center;
+    background:var(--green-pale); margin-bottom:20px;
+  }
+  .card:nth-child(2) .ico{ background:var(--yellow-soft); }
+  .card:nth-child(3) .ico{ background:var(--pink-pale); }
+  .card h3{ font-size:21px; margin-bottom:10px; }
+  .card .tag{ font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--green-mid); font-weight:600; margin-bottom:14px; }
+  .card p{ color:var(--text-soft); font-size:15.5px; flex-grow:1; }
+  .card .who{
+    margin-top:16px; padding-top:16px; border-top:1px dashed var(--line);
+    font-size:13.5px; color:var(--text-soft);
+  }
+  .card .who b{ color:var(--green-deep); }
+  @media (max-width:940px){ .cards{ grid-template-columns:1fr; } }
+
+  .all-abilities{
+    margin-top:44px; display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+    background:var(--green-deep); color:#F3EEDF; border-radius:var(--radius);
+    padding:26px 30px;
+  }
+  .all-abilities .ico{ font-size:26px; flex-shrink:0; }
+  .all-abilities p{ margin:0; font-size:15.5px; color:#EFE9D6; }
+  .all-abilities strong{ color:#fff; }
+
+  /* ---------- GALLERY ---------- */
+  #gallery{ background:var(--bg-alt); }
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:190px; gap:18px; margin-top:50px;
+  }
+  .gallery-card{
+    all:unset; box-sizing:border-box; display:block; width:100%; height:100%;
+    margin:0; border-radius:16px; overflow:hidden; position:relative; box-shadow:var(--shadow);
+    cursor:pointer;
+  }
+  .gallery-card:focus-visible{ outline:3px solid var(--yellow); outline-offset:2px; }
+  .gallery-grid .gallery-card:nth-child(1){ grid-column:span 2; grid-row:span 2; }
+  .gallery-grid .gallery-card:nth-child(6){ grid-column:span 2; }
+  .gallery-card img{
+    width:100%; height:100%; object-fit:cover; position:absolute; inset:0;
+    transition:transform .5s ease;
+  }
+  .gallery-card:hover img{ transform:scale(1.06); }
+  .gc-count{
+    position:absolute; top:12px; right:12px; z-index:2;
+    background:rgba(255,253,248,0.92); color:var(--green-deep); font-family:'Jost',sans-serif;
+    font-size:11.5px; font-weight:600; padding:5px 11px; border-radius:100px;
+  }
+  .gc-bar{
+    position:absolute; left:0; right:0; bottom:0; z-index:2; padding:16px 16px 13px;
+    background:linear-gradient(0deg, rgba(42,40,32,0.75), transparent);
+    color:#fff; display:flex; align-items:flex-end; justify-content:space-between; gap:8px;
+  }
+  .gc-bar .name{ font-family:'Fraunces',serif; font-size:15.5px; }
+  .gc-bar .cta{
+    font-family:'Jost',sans-serif; font-size:12px; white-space:nowrap; opacity:0;
+    transform:translateX(-4px); transition:opacity .25s ease, transform .25s ease;
+  }
+  .gallery-card:hover .gc-bar .cta, .gallery-card:focus-visible .gc-bar .cta{ opacity:1; transform:translateX(0); }
+  @media (max-width:860px){
+    .gallery-grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:170px; }
+    .gallery-grid .gallery-card:nth-child(1){ grid-column:span 2; grid-row:span 1; }
+    .gallery-grid .gallery-card:nth-child(6){ grid-column:span 1; }
+    .gc-bar .cta{ opacity:1; transform:none; }
+  }
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center;
+    padding:24px; opacity:0; pointer-events:none; transition:opacity .25s ease;
+  }
+  .lightbox.open{ opacity:1; pointer-events:auto; }
+  .lightbox-backdrop{ position:absolute; inset:0; background:rgba(24,26,18,0.82); }
+  .lightbox-inner{
+    position:relative; z-index:1; width:100%; max-width:920px; background:var(--card);
+    border-radius:20px; overflow:hidden; box-shadow:0 30px 70px rgba(0,0,0,0.35);
+    display:flex; flex-direction:column; max-height:88vh;
+  }
+  .lightbox-head{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    padding:18px 22px; border-bottom:1px solid var(--line);
+  }
+  .lightbox-title{ font-family:'Fraunces',serif; color:var(--green-deep); font-size:18px; }
+  .lightbox-count{ font-size:13px; color:var(--text-soft); margin-right:auto; margin-left:12px; }
+  .lightbox-close{
+    all:unset; cursor:pointer; font-size:26px; line-height:1; color:var(--text-soft); padding:4px 8px;
+    border-radius:8px;
+  }
+  .lightbox-close:hover, .lightbox-close:focus-visible{ color:var(--green-deep); background:var(--green-pale); }
+  .lightbox-stage{
+    position:relative; background:#1e2318; display:flex; align-items:center; justify-content:center;
+    min-height:280px; flex:1;
+  }
+  .lightbox-img{ max-width:100%; max-height:62vh; object-fit:contain; }
+  .lightbox-nav{
+    all:unset; cursor:pointer; position:absolute; top:50%; transform:translateY(-50%);
+    width:42px; height:42px; border-radius:50%; background:rgba(255,255,255,0.92); color:var(--green-deep);
+    display:flex; align-items:center; justify-content:center; font-size:22px;
+  }
+  .lightbox-nav:hover, .lightbox-nav:focus-visible{ background:#fff; }
+  .lightbox-nav.prev{ left:16px; }
+  .lightbox-nav.next{ right:16px; }
+  .lightbox-thumbs{
+    display:flex; gap:10px; padding:14px 18px; overflow-x:auto; background:var(--card);
+  }
+  .lightbox-thumbs img{
+    width:64px; height:52px; object-fit:cover; border-radius:9px; cursor:pointer; flex-shrink:0;
+    opacity:.55; transition:opacity .2s ease, outline .2s ease; outline:2px solid transparent;
+  }
+  .lightbox-thumbs img:hover{ opacity:.85; }
+  .lightbox-thumbs img.active{ opacity:1; outline-color:var(--yellow); }
+  @media (max-width:640px){
+    .lightbox-nav{ width:36px; height:36px; font-size:18px; }
+    .lightbox-img{ max-height:48vh; }
+  }
+
+  /* ---------- ENQUIRY ---------- */
+  #enquiry .enq-wrap{ display:grid; grid-template-columns:.85fr 1.15fr; gap:56px; }
+  .enq-side p{ color:var(--text-soft); }
+  .enq-points{ list-style:none; margin:26px 0 0; padding:0; display:flex; flex-direction:column; gap:16px; }
+  .enq-points li{ display:flex; gap:12px; font-size:15px; color:var(--text-soft); align-items:flex-start; }
+  .enq-points .dot{
+    width:8px; height:8px; border-radius:50%; background:var(--yellow); margin-top:8px; flex-shrink:0;
+  }
+  form{
+    background:var(--card); border-radius:var(--radius); padding:38px; box-shadow:var(--shadow);
+    border:1px solid var(--line);
+  }
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .field{ margin-bottom:20px; }
+  .field label{ display:block; font-size:14px; font-weight:500; color:var(--green-deep); margin-bottom:7px; }
+  .field input[type=text], .field input[type=email], .field textarea, .field select{
+    width:100%; padding:13px 14px; border-radius:12px; border:1.5px solid var(--line);
+    background:#fff; font-family:'Jost',sans-serif; font-size:15px; color:var(--text);
+    transition:border-color .2s ease;
+  }
+  .field input:focus, .field textarea:focus, .field select:focus{
+    outline:none; border-color:var(--green-mid);
+  }
+  .field textarea{ resize:vertical; min-height:130px; }
+  .checkbox-group{ display:flex; flex-wrap:wrap; gap:10px; }
+  .checkbox-group label{
+    display:flex; align-items:center; gap:8px; font-size:14px; font-weight:400; color:var(--text);
+    background:var(--green-pale); padding:9px 14px; border-radius:100px; cursor:pointer; margin:0;
+  }
+  .checkbox-group input{ accent-color:var(--green-deep); }
+  .form-note{ font-size:12.5px; color:var(--text-soft); margin-top:14px; }
+  @media (max-width:940px){
+    #enquiry .enq-wrap{ grid-template-columns:1fr; }
+    .form-row{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{ background:var(--green-deep); color:#EDE7D4; padding:64px 0 28px; }
+  .footer-grid{ display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; }
+  footer h4{ color:#fff; font-size:16px; margin-bottom:16px; }
+  footer p{ color:#CFCBAF; font-size:14.5px; }
+  footer ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+  footer a{ color:#EDE7D4; text-decoration:none; font-size:14.5px; }
+  footer a:hover{ color:var(--yellow); }
+  .footer-bottom{
+    margin-top:48px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.14);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:13px; color:#B9B49B;
+  }
+  @media (max-width:760px){ .footer-grid{ grid-template-columns:1fr; } }
+
+  .divider{
+    height:56px; width:100%; display:block;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="#home" class="logo">Martyna<span class="dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#consultancy">Consultancy</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#enquiry">Enquire</a></li>
+      <li><a href="https://magicmartynaferments.substack.com" target="_blank" rel="noopener">Substack ↗</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- ============ HOME ============ -->
+<section id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <div class="hero-tag">Soil · Fermentation · Heart-centred living</div>
+        <h1 class="headline">If you're here because you love soil, fermentation, or <span class="accent">heart-focused</span> living — you're in the right place.</h1>
+        <p class="lede">I'm Martyna: horticultural consultant, fermentation specialist, and someone who believes good soil, good ferments and a bit of honest presence can change a life. Come and grow something with me — in the garden, in the kitchen, or in yourself.</p>
+        <div class="hero-ctas">
+          <a href="#enquiry" class="btn btn-primary">Start a conversation</a>
+          <a href="https://magicmartynaferments.substack.com" target="_blank" rel="noopener" class="btn btn-outline">Read the Substack</a>
+        </div>
+      </div>
+      <div class="reveal in" style="position:relative;">
+        <div class="photo-card">
+          <!-- PLACEHOLDER-IMAGE: replace with images/hero-martyna.jpg -->
+          <img src="images/hero-martyna.jpg" alt="Martyna in her garden" onerror="this.style.display='none'">
+          <div class="placeholder-photo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+            <div class="label">Photo of Martyna</div>
+            <div class="sub">add images/hero-martyna.jpg</div>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="ico">🌿</div>
+          <div class="txt"><strong>Over 10 years</strong>growing, fermenting &amp; teaching, hands in the soil</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <!-- PLACEHOLDER-IMAGE: replace with images/about-martyna.jpg -->
+        <img src="images/about-martyna.jpg" alt="Martyna working with plants" onerror="this.style.display='none'">
+        <div class="placeholder-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+          <div class="label">A little more of Martyna</div>
+          <div class="sub">add images/about-martyna.jpg</div>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <div class="eyebrow">A little about me</div>
+        <h2>Grounded in soil, shaped by fermentation</h2>
+        <p>I've spent over a decade with my hands in the earth — growing food, tending community gardens, running hydroponic and aquaponic systems, and teaching people of every age how to work with nature rather than against it. I've taught in schools, run therapeutic gardening sessions, built a wildflower collective from scratch, and was even featured on Gardeners' World for my work in urban growing.</p>
+        <p>Fermentation found me next, and it changed everything. Learning to turn what I grow into ferments, vinegars and pantry staples reconnected me with something older and steadier — and after years of my own gut health struggles, coming back to a place where food felt like medicine again taught me that our bodies are far more capable of healing than we're often led to believe.</p>
+        <p>These days I write Magic Martyna Ferments on Substack, sharing what I know about soil, fermentation and a slower, more resilient way of living — alongside private consultancy for anyone who'd like a more hands-on, one-to-one approach.</p>
+        <div class="signoff">Come as you are. Bring your questions.</div>
+
+        <div class="substack-strip">
+          <div class="txt">
+            <strong>Magic Martyna Ferments — the Substack</strong>
+            <span>Weekly-ish notes on growing, fermenting, and heart-focused living</span>
+          </div>
+          <a href="https://magicmartynaferments.substack.com" target="_blank" rel="noopener" class="btn btn-sun">Subscribe free ↗</a>
+        </div>
+
+        <p class="press-note">I also write for <a href="https://gardenculturemagazine.com/author/martyna-krol/" target="_blank" rel="noopener">Garden Culture Magazine ↗</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONSULTANCY ============ -->
+<section id="consultancy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Work with me</div>
+      <h2>Three ways we can grow something together</h2>
+      <p class="lede">I've worked with children, teens and adults alike, and I can explain any of this at whatever level suits you — no jargon required. Whether you're brand new or looking to go deeper, here's where we can begin.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card reveal">
+        <div class="ico">🌱</div>
+        <div class="tag">Soil &amp; Foodscaping</div>
+        <h3>Grow food that can weather anything</h3>
+        <p>Bespoke consultation about your garden and your goals. Together we can create or improve any garden and make it resilient to pests and a changing environment, polish off your composting skills, and help you become someone who truly understands their soil and what it needs. I've worked with hydroponic and aquaponic systems too, but my biggest love is nurtured soil and long-term resilience — so we can both thrive despite whatever the seasons bring.</p>
+        <div class="who"><b>Welcomes:</b> balcony &amp; yarden owners, allotmenteers, gardeners and smallholders alike.</div>
+      </div>
+
+      <div class="card reveal">
+        <div class="ico">🫙</div>
+        <div class="tag">Fermentation &amp; Natural Homestead</div>
+        <h3>Turn your harvest into a pantry that lasts</h3>
+        <p>Learn to turn your produce into healthy, long-lasting stores — the way pantries used to work. We'll explore lacto-fermentation, acetic fermentation and enzymatic fermentation, make aromatic vinegars for dressings and skincare, and create simple, clean recipes from what you've grown. If you're not sure where to start, we can do a thorough home check and help your family live a cleaner life — impressing friends along the way with produce you made with your own hands.</p>
+        <div class="who"><b>Welcomes:</b> anyone ready to trade store-bought for homemade, one small batch at a time.</div>
+      </div>
+
+      <div class="card reveal">
+        <div class="ico">💛</div>
+        <div class="tag">Honest Talk</div>
+        <h3>A space for the heavy stuff — or just life</h3>
+        <p>Sometimes you need to talk to someone, and there's no one to talk to. I've practised Heart Coherence for several years now, alongside training with Peter Crone that showed me we can break free from carrying so much suffering — and change our lives by seemingly not changing much at all. I offer a space for reflection, a helping hand if you want it, and sometimes a pragmatic suggestion you can take or leave — but mostly, true presence. My hope is that you leave feeling a little more like what you really are: love.</p>
+        <div class="who"><b>Welcomes:</b> anyone who needs to be genuinely heard, no fixing required.</div>
+      </div>
+    </div>
+
+    <div class="all-abilities reveal">
+      <div class="ico">🤝</div>
+      <p><strong>No pressure, no pitch.</strong> One-off sessions or ongoing support, in your garden or over a video call — whatever suits you, your space, and your pace.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">A peek behind the scenes</div>
+      <h2>Gardens, ferments &amp; the people who grow them</h2>
+      <p class="lede">A few glimpses of garden changeovers, plants, ferments and workshops. Click any tile for the full set.</p>
+    </div>
+
+    <!-- Gallery tiles are filled in automatically by the GALLERY list near the
+         bottom of this file (search "GALLERY DATA"). To add or swap photos,
+         edit that list only — nothing here needs to change. -->
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox-backdrop" data-close></div>
+  <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <div class="lightbox-head">
+      <span class="lightbox-title" id="lightboxTitle"></span>
+      <span class="lightbox-count" id="lightboxCount"></span>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery">&times;</button>
+    </div>
+    <div class="lightbox-stage">
+      <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous photo">&#8249;</button>
+      <img class="lightbox-img" id="lightboxImg" alt="">
+      <button class="lightbox-nav next" id="lightboxNext" aria-label="Next photo">&#8250;</button>
+    </div>
+    <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+  </div>
+</div>
+
+<!-- ============ ENQUIRY ============ -->
+<section id="enquiry">
+  <div class="wrap">
+    <div class="enq-wrap">
+      <div class="enq-side reveal">
+        <div class="eyebrow">Let's talk</div>
+        <h2>Tell me a little about yourself</h2>
+        <p>Fill in the form and share a bit about you, your garden, your kitchen or whatever's on your mind — and how I might be able to help you or your project. No pressure, no pitch, just a real conversation to start.</p>
+        <ul class="enq-points">
+          <li><span class="dot"></span>I read every message myself, usually within a few days.</li>
+          <li><span class="dot"></span>Not sure which of the three feels right? Say so — we'll figure it out together.</li>
+          <li><span class="dot"></span>One-off consultations and ongoing support both welcome.</li>
+        </ul>
+      </div>
+
+      <form class="reveal" action="https://formspree.io/f/YOUR-FORMSPREE-ID" method="POST">
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Grower">
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>What are you interested in?</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interest" value="Soil & Foodscaping"> Soil &amp; Foodscaping</label>
+            <label><input type="checkbox" name="interest" value="Fermentation & Natural Homestead"> Fermentation &amp; Homestead</label>
+            <label><input type="checkbox" name="interest" value="Honest Talk"> Honest Talk</label>
+            <label><input type="checkbox" name="interest" value="Not sure yet"> Not sure yet</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Tell me a little about yourself and how I can help</label>
+          <textarea id="message" name="message" required placeholder="Your garden, your goals, your questions — whatever feels relevant."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send my enquiry</button>
+        <p class="form-note">This form is powered by Formspree — swap in your own Formspree ID (see the note at the top of this file) and submissions will arrive straight in your inbox.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Martyna</h4>
+        <p>Horticultural consultant &amp; fermentation specialist. Soil, ferments, and honest conversation for anyone ready to grow — in the garden or in themselves.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#consultancy">Consultancy</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#enquiry">Enquire</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://magicmartynaferments.substack.com" target="_blank" rel="noopener">Substack ↗</a></li>
+          <li><a href="https://gardenculturemagazine.com/author/martyna-krol/" target="_blank" rel="noopener">Garden Culture Magazine ↗</a></li>
+          <li><a href="https://YOUR-INSTAGRAM-URL" target="_blank" rel="noopener">Instagram ↗</a></li>
+          <li><a href="mailto:hello@YOURDOMAIN.COM">hello@YOURDOMAIN.COM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Martyna · YOURDOMAIN.COM</span>
+      <span>Made with soil, sunlight and love.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // ============================================================
+  // GALLERY DATA — this is the only part you need to touch to
+  // manage your photos. Add or remove filenames from any "images"
+  // list below; everything else (tiles, counts, lightbox) updates
+  // itself. Keep photos in the /images folder next to this file.
+  // ============================================================
+  const GALLERY = [
+    { key:'garden', label:'Garden Changeovers',
+      images:['images/gallery-garden-1.jpg','images/gallery-garden-2.jpg','images/gallery-garden-3.jpg','images/gallery-garden-4.jpg','images/gallery-garden-5.jpg','images/gallery-garden-6.jpg','images/gallery-garden-7.jpg','images/gallery-garden-8.jpg','images/gallery-garden-9.jpg','images/gallery-garden-10.jpg'] },
+    { key:'ferments', label:'Ferments & Pantry',
+      images:['images/gallery-ferments-1.jpg','images/gallery-ferments-2.jpg','images/gallery-ferments-3.jpg','images/gallery-ferments-4.jpg','images/gallery-ferments-5.jpg','images/gallery-ferments-6.jpg','images/gallery-ferments-7.jpg','images/gallery-ferments-8.jpg','images/gallery-ferments-9.jpg','images/gallery-ferments-10.jpg'] },
+    { key:'workshops', label:'Workshops',
+      images:['images/gallery-workshops-1.jpg','images/gallery-workshops-2.jpg','images/gallery-workshops-3.jpg','images/gallery-workshops-4.jpg','images/gallery-workshops-5.jpg','images/gallery-workshops-6.jpg','images/gallery-workshops-7.jpg','images/gallery-workshops-8.jpg','images/gallery-workshops-9.jpg','images/gallery-workshops-10.jpg'] },
+    { key:'plants', label:'Plant Portraits',
+      images:['images/gallery-plants-1.jpg','images/gallery-plants-2.jpg','images/gallery-plants-3.jpg','images/gallery-plants-4.jpg','images/gallery-plants-5.jpg','images/gallery-plants-6.jpg','images/gallery-plants-7.jpg','images/gallery-plants-8.jpg','images/gallery-plants-9.jpg','images/gallery-plants-10.jpg'] },
+    { key:'harvest', label:'Fresh Harvest',
+      images:['images/gallery-harvest-1.jpg','images/gallery-harvest-2.jpg','images/gallery-harvest-3.jpg','images/gallery-harvest-4.jpg','images/gallery-harvest-5.jpg','images/gallery-harvest-6.jpg','images/gallery-harvest-7.jpg','images/gallery-harvest-8.jpg','images/gallery-harvest-9.jpg','images/gallery-harvest-10.jpg'] },
+    { key:'community', label:'Community & Connection',
+      images:['images/gallery-community-1.jpg','images/gallery-community-2.jpg','images/gallery-community-3.jpg','images/gallery-community-4.jpg','images/gallery-community-5.jpg','images/gallery-community-6.jpg','images/gallery-community-7.jpg','images/gallery-community-8.jpg','images/gallery-community-9.jpg','images/gallery-community-10.jpg'] },
+  ];
+
+  function escXml(s){
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
+  }
+
+  function placeholderSVG(label){
+    const safeLabel = escXml(label);
+    const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">'
+      + '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">'
+      + '<stop offset="0" stop-color="#E3EBD9"/><stop offset="0.55" stop-color="#F1CE8B"/><stop offset="1" stop-color="#F6DAD3"/>'
+      + '</linearGradient></defs><rect width="800" height="600" fill="url(#g)"/>'
+      + '<text x="400" y="288" font-family="sans-serif" font-size="26" fill="#33502F" text-anchor="middle">' + safeLabel + '</text>'
+      + '<text x="400" y="322" font-family="sans-serif" font-size="16" fill="#5B5646" text-anchor="middle">add this photo</text></svg>';
+    return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+  }
+
+  const galleryGrid = document.getElementById('galleryGrid');
+  GALLERY.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'gallery-card reveal';
+    const safeLabel = escXml(cat.label);
+    btn.setAttribute('aria-label', 'Open ' + safeLabel + ' gallery, ' + cat.images.length + ' photos');
+    const cover = cat.images[0];
+    btn.innerHTML =
+      '<img src="' + cover + '" alt="' + safeLabel + '" loading="lazy" onerror="this.src=\'' + placeholderSVG(cat.label) + '\'; this.onerror=null;">'
+      + '<span class="gc-count">' + cat.images.length + ' photo' + (cat.images.length === 1 ? '' : 's') + '</span>'
+      + '<span class="gc-bar"><span class="name">' + safeLabel + '</span><span class="cta">View gallery →</span></span>';
+    btn.addEventListener('click', () => openLightbox(cat.key));
+    galleryGrid.appendChild(btn);
+  });
+
+  // ---------- Lightbox ----------
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightboxImg');
+  const lbTitle = document.getElementById('lightboxTitle');
+  const lbCount = document.getElementById('lightboxCount');
+  const lbThumbs = document.getElementById('lightboxThumbs');
+  let currentCat = null, currentIndex = 0;
+
+  function renderLightbox(){
+    const cat = GALLERY.find(c => c.key === currentCat);
+    if(!cat) return;
+    const src = cat.images[currentIndex];
+    lbImg.src = src;
+    lbImg.onerror = () => { lbImg.onerror = null; lbImg.src = placeholderSVG(cat.label); };
+    lbImg.alt = cat.label + ' photo ' + (currentIndex + 1);
+    lbTitle.textContent = cat.label;
+    lbCount.textContent = (currentIndex + 1) + ' / ' + cat.images.length;
+    lbThumbs.innerHTML = '';
+    cat.images.forEach((src2, i) => {
+      const t = document.createElement('img');
+      t.src = src2;
+      t.loading = 'lazy';
+      t.alt = '';
+      t.className = i === currentIndex ? 'active' : '';
+      t.onerror = () => { t.onerror = null; t.src = placeholderSVG(cat.label); };
+      t.addEventListener('click', () => { currentIndex = i; renderLightbox(); });
+      lbThumbs.appendChild(t);
+    });
+  }
+
+  function openLightbox(key){
+    currentCat = key; currentIndex = 0;
+    renderLightbox();
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  function step(delta){
+    const cat = GALLERY.find(c => c.key === currentCat);
+    if(!cat) return;
+    currentIndex = (currentIndex + delta + cat.images.length) % cat.images.length;
+    renderLightbox();
+  }
+
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  document.getElementById('lightboxPrev').addEventListener('click', () => step(-1));
+  document.getElementById('lightboxNext').addEventListener('click', () => step(1));
+  lightbox.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeLightbox));
+  document.addEventListener('keydown', (e) => {
+    if(!lightbox.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLightbox();
+    if(e.key === 'ArrowLeft') step(-1);
+    if(e.key === 'ArrowRight') step(1);
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
